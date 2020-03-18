@@ -463,6 +463,8 @@ h2 {
   .project-header img {
     width: 100%;
     margin: auto;
+    height: 350px;
+    object-fit: cover;
   }
   .side-tracker {
     display: none;
@@ -584,6 +586,11 @@ h2 {
   }
   .prototype div {
     width: 100%;
+  }
+  .process-block img {
+    height: 300px;
+    object-fit: contain;
+    background-color: #f3f3f3;
   }
 }
 
