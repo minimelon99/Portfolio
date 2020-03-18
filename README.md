@@ -1,3 +1,5 @@
 # Portfolio
-my first project on github
+
+Portfolio written using HTML/CSS & JS
+also my first project on github
 yay!
