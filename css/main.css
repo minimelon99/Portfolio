@@ -593,7 +593,6 @@ h2 {
   width: 80%;
   justify-content: space-evenly;
   margin: 0 auto;
-  align-items: center;
   padding: 50px 0;
 }
 .key-takeaways h2 {
@@ -606,8 +605,8 @@ h2 {
   flex-wrap: wrap;
 }
 .takeaways div {
-  width: 40%;
-  padding: 25px;
+  width: 100%;
+  padding: 25px 0;
 }
 @media (max-width: 575.98px) {
   .key-takeaways {
