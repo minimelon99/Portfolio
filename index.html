@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Place your kit's code here -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ba013bbe16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans|Overpass&display=swap"
+      rel="stylesheet"
+    />
+    <title>Amy Zhu Portfolio</title>
+    <link rel="icon" type="image/png" href="img/fullhead_happy.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="front-page-header">
+      <nav class="header-nav ">
+        <div>
+          <a href="index.html"><h2>Amy Zhu</h2></a>
+        </div>
+        <div class="menu desktop-menu">
+          <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="personalwork.html">Personal Work</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars fa-2x"></i>
+        <div class="menu mobile-menu">
+          <i class="fas fa-times fa-2x"></i>
+          <ul class="mobile-styles">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="personalwork.html">Personal Work</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="fp-hero animated fadeInUp">
+        <img src="img/fullhead_smile.png" alt="amy cartoon portrait" />
+
+        <div class="fp-hero-text">
+          <h1>Hello, I'm Amy</h1>
+          <h2>a product designer based in Vancouver</h2>
+          <div class="brown-bar"></div>
+          <p>
+            I like to solve everyday user problems to create a better
+            experience. Outside of design, I like to draw
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <section class="fp-body">
+      <a class="project" data-aos="fade-up-right" href="konokonaartist.html">
+        <img
+          src="https://http.cat/420"
+          alt="cat glowy eyes"
+          class=" order-left"
+        />
+
+        <div class="project-text">
+          <h4>Product Design. UX Research. Case Study</h4>
+          <h2>konokona - CRM</h2>
+          <p>
+            Helping anime convention organizers sort through 650+ artist
+            applications.
+          </p>
+        </div>
+      </a>
+      <article class="project " data-aos="fade-up-left">
+        <!-- <article
+        class="project lax"
+        data-lax-preset="leftToRight-.05""
+        data-lax-anchor="self"
+      > -->
+        <img src="https://http.cat/420" alt="cat glowy eyes" />
+
+        <div class="project-text">
+          <h4>Product Design. UX Research. Case Study</h4>
+          <h2>konokona - Artist Applications</h2>
+          <p>
+            Simplifying the process of attending artist alley for local artists
+          </p>
+        </div>
+      </article>
+      <article class="project" data-aos="fade-up-right">
+        <img
+          src="https://http.cat/420"
+          alt="cat glowy eyes"
+          class=" order-left"
+        />
+        <div class="project-text">
+          <h4>Product Design. UI Developer</h4>
+          <h2>CoPilot AI</h2>
+          <p>
+            Simplifying the way users prospect and manage their leads on
+            LinkedIn.
+          </p>
+        </div>
+      </article>
+      <article class="project" data-aos="fade-up-left">
+        <img src="https://http.cat/420" alt="cat glowy eyes" />
+        <div class="project-text">
+          <h4>UX Research.</h4>
+          <h2>Careteam</h2>
+          <p>
+            Probe Toolkit created to improve the lives of Caregivers through
+            understanding their thoughts and emotions.
+          </p>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <a href="mailto:yinazhu99@gmail.com"
+        ><i class="far fa-envelope fa-lg"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/amy-zhu-3233ab115/">
+        <i class="fab fa-linkedin fa-lg"></i
+      ></a>
+      <a href="https://www.instagram.com/minimelon99/">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <p>Designed & Coded by Amy Zhu | 2020</p>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+
+    <script>
+      AOS.init({
+        disable: "mobile"
+      });
+
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true // default
+      });
+      wow.init();
+
+      window.onload = function() {
+        lax.setup(); // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
+
+        window.requestAnimationFrame(updateLax);
+      };
+    </script>
+  </body>
+</html>

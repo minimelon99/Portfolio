@@ -1,0 +1,676 @@
+body {
+  font-family: "Overpass", "Roboto";
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: black;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.75em;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Overpass", "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #3b3b3b;
+  font-size: 20px;
+  line-height: 2;
+}
+@media (max-width: 575.98px) {
+  p {
+    line-height: 1.5;
+  }
+}
+/*top header here*/
+.front-page-header {
+  background-color: #c6e6b8;
+}
+/*header navigation here HEADER IS UNIVERSAALLLl*/
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .header-nav {
+    padding: 0;
+  }
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header-nav li {
+  margin: 0px 20px;
+}
+
+.header-nav a {
+  color: #33344b;
+  font-weight: bold;
+  font-size: 1.2em;
+  position: relative;
+}
+/* .header-nav a:hover {
+  border-bottom: 8px solid #525370;
+  transition: all 0.2s ease-in-out 0s;
+} */
+
+.header-nav a:before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  top: 30px;
+  left: 0;
+  background: #525370;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+.header-nav a:hover:before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  top: 25px;
+}
+
+.header-nav h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/*no space because there is no parent*/
+
+.fa-bars {
+  z-index: 15;
+}
+.desktop-menu {
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 20;
+    text-align: right;
+  }
+
+  .mobile-styles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    width: fit-content;
+    padding: 150px 50px 50px 50px;
+    margin: 0 auto;
+  }
+
+  .fa-times {
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+  .mobile-menu.open {
+    display: block;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+@media (min-width: 767.99px) {
+  .fa-bars {
+    display: none;
+  }
+}
+/*front page herrooooo*/
+.fp-hero {
+  padding: 150px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.brown-bar {
+  border: 0;
+  border-top: 8px solid rgba(102, 102, 102, 0.75);
+  max-width: 350px;
+}
+
+.fp-hero-text {
+  text-align: left;
+  width: 35%;
+  padding: 0 30px;
+}
+
+.fp-hero img {
+  max-width: 400px;
+  width: 40%;
+  background-color: peachpuff;
+  border-radius: 50%;
+}
+
+.fp-hero h1,
+h2 {
+  margin: 15px 0;
+}
+/*mobile for header*/
+@media (max-width: 575.98px) {
+  .fp-hero {
+    display: block;
+    padding: 75px 40px;
+    z-index: 5;
+  }
+  .fp-hero-text {
+    width: 100%;
+    padding: 0;
+  }
+  .fp-hero img {
+    width: 90%;
+    padding: 0 20px;
+  }
+}
+/*body section here*/
+.fp-body {
+  width: 80%;
+  /*margin 0 auto means equal amount of space on both sides*/
+  margin: auto;
+}
+
+.project {
+  display: flex;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  justify-content: space-around;
+  margin: 40px;
+  padding: 30px 20px;
+}
+
+.project img {
+  width: 45%;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.project-text h2 {
+  margin: 0;
+}
+
+.project-text h4 {
+  margin: 15px 0;
+  color: gray;
+}
+
+.order-left {
+  order: 2;
+}
+/*mobile view for the body*/
+@media (max-width: 575.98px) {
+  .fp-body {
+    width: 100%;
+  }
+  .project {
+    display: block;
+    margin: 20px;
+  }
+  .project img {
+    width: 100%;
+  }
+  .project-text {
+    display: block;
+    width: 100%;
+  }
+}
+/*footer*/
+.footer {
+  padding: 15px 0;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  width: 100%;
+  font-size: 15px;
+}
+.footer a {
+  color: black;
+}
+
+/*about page HEROOOO*/
+.about-page-header {
+  background-color: #fef5c8;
+}
+/*parallax only*/
+.ab-parallax {
+  height: 300px;
+  background: url("https://http.cat/101");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*parallax only*/
+
+.about-hero {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 0;
+}
+
+.about-hero img {
+  width: 40%;
+  align-self: center;
+}
+
+.about-hero div {
+  width: 40%;
+}
+
+@media (max-width: 575.98px) {
+  .about-hero {
+    display: block;
+  }
+  .about-hero img {
+    width: 100%;
+  }
+  .about-hero div {
+    width: 100%;
+  }
+}
+
+/*about page body*/
+.ab-body {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.ab-align {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+}
+.ab-body h2 {
+  padding: 25px 0;
+}
+.ab-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.ab-skills {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.ab-job {
+  margin: 0 5%;
+  padding-bottom: 10px;
+}
+/* .grey-bar {
+  border: 0;
+  border-top: 1px solid rgba(102, 102, 102, 0.25);
+} */
+.ab-job h4 {
+  font-weight: normal;
+}
+
+/*workexperience*/
+.ab-we {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+.ab-wealign {
+  padding: 0 55px;
+  border-right: 1px solid #d3d3d3;
+  width: 25%;
+}
+.we-flex {
+  width: 50%;
+}
+@media (max-width: 575.98px) {
+  .ab-align h2 {
+    text-align: center;
+  }
+  .ab-flex {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .ab-skills {
+    width: 100%;
+  }
+  .ab-we {
+    display: block;
+  }
+  .ab-wealign {
+    border: none;
+    width: 75%;
+    padding: 0 50px;
+  }
+  .we-flex {
+    width: 100%;
+  }
+}
+
+/*download cv area*/
+.ab-cv {
+  background-color: #fef5c8;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ab-cv button {
+  color: rgba(28, 28, 28, 1);
+  border: 2px solid rgba(28, 28, 28, 1);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 19px 44px 19px 44px;
+}
+
+.ab-cv button:hover {
+  background-color: rgba(28, 28, 28, 1);
+  color: white;
+  cursor: pointer;
+}
+
+/*PROJECT TEMPLATE TIME. ONE PAGE HERE APPLIES TO ALL PROJECT PAGES. OMFG. OTHER WISE I'M GONA OVER WORK*/
+.project1-bg {
+  background-color: white;
+}
+.project-header {
+  text-align: center;
+  padding: 100px 0 10px 0;
+}
+.project-header img {
+  width: 70%;
+  margin: 50px;
+  align-self: center;
+}
+
+.project-header h1 {
+  margin: 0.65em 0;
+}
+/*my role and what it is description*/
+.project-container {
+  padding: 10px 0 50px 0;
+}
+
+.project-define {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.project-define h2 {
+  width: 20%;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.project-define p {
+  width: 40%;
+  text-align: left;
+}
+@media (max-width: 575.98px) {
+  .project-header {
+    width: 90%;
+    margin: auto;
+  }
+  .project-header img {
+    width: 100%;
+    margin: auto;
+  }
+  .side-tracker {
+    display: none;
+  }
+  .project-define {
+    display: block;
+    padding: 0 50px;
+  }
+  .project-define h2 {
+    width: 50%;
+    text-align: left;
+  }
+  .project-define p {
+    width: 100%;
+  }
+}
+/*problem statement definition*/
+.problem-statement {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  padding: 80px 0;
+  justify-content: center;
+}
+.problem-statement img {
+  width: 40%;
+  padding-right: 25px;
+  align-self: center;
+}
+.statement {
+  width: 40%;
+  padding-left: 25px;
+}
+@media (max-width: 575.98px) {
+  .problem-statement {
+    display: block;
+  }
+  .problem-statement img {
+    width: 100%;
+    padding: 0;
+  }
+  .statement {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*project show case area where i explain what i made*/
+.showcase {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.showcase img {
+  width: 40%;
+  padding: 25px;
+}
+
+.showcase h2 {
+  padding: 25px;
+  width: 40%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 575.98px) {
+  .showcase {
+    display: block;
+    width: 90%;
+  }
+  .showcase img {
+    width: 90%;
+    margin: auto;
+    padding: 0 20px;
+  }
+  .showcase h2 {
+    width: 90%;
+    padding: 0 25px 25px 25px;
+  }
+}
+
+/*wireframes/process*/
+.process {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.process-block {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.process-block img {
+  width: 100%;
+}
+
+.process-block p {
+  width: 100%;
+}
+
+/*final product*/
+.prototype {
+  width: 80%;
+  margin: auto;
+}
+.prototype div {
+  width: 85%;
+  margin: auto;
+}
+
+@media (max-width: 575.98px) {
+  .process {
+    width: 90%;
+  }
+  .prototype div {
+    width: 100%;
+  }
+}
+
+/*key take aways*/
+.key-takeaways {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  align-items: center;
+  padding: 50px 0;
+}
+.key-takeaways h2 {
+  width: 20%;
+  padding: 25px;
+}
+.takeaways {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.takeaways div {
+  width: 40%;
+  padding: 25px;
+}
+@media (max-width: 575.98px) {
+  .key-takeaways {
+    display: block;
+    width: 90%;
+  }
+  .key-takeaways h2 {
+    width: 90%;
+  }
+  .takeaways {
+    width: 100%;
+  }
+  .takeaways div {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+/**/
+
+/**/
+
+/*SIDE TRACK BAR FOR PROJECT. FOR THE ASIDE STUFF*/
+.side-tracker {
+  position: fixed;
+  top: 20%;
+  padding-left: 125px;
+}
+
+.side-tracker ol {
+  color: gray;
+}
+.side-tracker li {
+  line-height: 4em;
+  font-size: 1.1em;
+}
+.side-tracker a {
+  color: gray;
+}
+
+/*personal*/
+.personal-work-header {
+  background-color: pink;
+  height: 100vh;
+}
+.error {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  align-self: center;
+}
+.error img {
+  width: 40%;
+}
+@media (max-width: 575.98px) {
+  .error {
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    padding-top: 100px;
+  }
+  .error img {
+    width: 90%;
+    padding: 25px;
+  }
+}
