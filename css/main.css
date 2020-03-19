@@ -269,6 +269,7 @@ h2 {
 }
 .footer a {
   color: black;
+  padding: 5px;
 }
 
 /*about page HEROOOO*/
@@ -418,7 +419,16 @@ h2 {
 }
 
 /*PROJECT TEMPLATE TIME. ONE PAGE HERE APPLIES TO ALL PROJECT PAGES. OMFG. OTHER WISE I'M GONA OVER WORK*/
+.project0-bg {
+  background-color: peachpuff;
+}
 .project1-bg {
+  background-color: #ade1ff;
+}
+.project3-bg {
+  background-color: #ffc32e;
+}
+.project2-bg {
   background-color: white;
 }
 .project-header {
@@ -427,7 +437,7 @@ h2 {
 }
 .project-header img {
   width: 70%;
-  margin: 50px;
+  margin: 25px 50px 0 50px;
   align-self: center;
 }
 
@@ -523,11 +533,12 @@ h2 {
 
 .showcase img {
   width: 40%;
-  padding: 25px;
+  padding: 25px 15px;
+  box-shadow: 1px 2px 10px rgba(154, 154, 154, 0.5);
 }
 
 .showcase h2 {
-  padding: 25px;
+  padding: 25px 35px;
   width: 40%;
 }
 
