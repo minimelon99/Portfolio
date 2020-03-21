@@ -420,7 +420,7 @@ h2 {
 
 /*PROJECT TEMPLATE TIME. ONE PAGE HERE APPLIES TO ALL PROJECT PAGES. OMFG. OTHER WISE I'M GONA OVER WORK*/
 .project0-bg {
-  background-color: peachpuff;
+  background-color: #ffd9d3;
 }
 .project1-bg {
   background-color: #ade1ff;
@@ -590,6 +590,11 @@ h2 {
   width: 85%;
   margin: auto;
 }
+.wireframes img {
+  width: 24%;
+  min-width: 245px;
+  align-self: center;
+}
 
 @media (max-width: 575.98px) {
   .process {
@@ -602,6 +607,11 @@ h2 {
     height: 300px;
     object-fit: contain;
     background-color: #f3f3f3;
+  }
+  .wireframes img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
   }
 }
 
