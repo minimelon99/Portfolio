@@ -668,21 +668,33 @@ h2 {
 /**/
 
 /*SIDE TRACK BAR FOR PROJECT. FOR THE ASIDE STUFF*/
+.hide-bar {
+  display: none;
+}
+
+.highlight {
+  color: black;
+}
+
 .side-tracker {
-  position: fixed;
+  position: sticky;
   top: 20%;
-  padding-left: 125px;
+  padding-left: 100px;
 }
 
 .side-tracker ol {
-  color: gray;
+  color: rgb(69, 68, 71);
 }
 .side-tracker li {
   line-height: 4em;
   font-size: 1.1em;
 }
 .side-tracker a {
-  color: gray;
+  color: rgb(69, 68, 71);
+}
+
+.active {
+  color: green;
 }
 
 /*personal*/
