@@ -591,14 +591,6 @@ h2 {
 }
 
 /*final product*/
-.prototype {
-  width: 80%;
-  margin: auto;
-}
-.prototype div {
-  width: 85%;
-  margin: auto;
-}
 .wireframes img {
   width: 24%;
   min-width: 245px;
@@ -608,9 +600,6 @@ h2 {
 @media (max-width: 575.98px) {
   .process {
     width: 90%;
-  }
-  .prototype div {
-    width: 100%;
   }
   .process-block img {
     height: 300px;
