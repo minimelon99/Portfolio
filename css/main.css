@@ -536,6 +536,11 @@ h2 {
   padding: 25px 15px;
   box-shadow: 1px 2px 10px rgba(154, 154, 154, 0.5);
 }
+.showcase video {
+  width: 40%;
+  padding: 25px 15px;
+  box-shadow: 1px 2px 10px rgba(154, 154, 154, 0.5);
+}
 
 .showcase h2 {
   padding: 25px 35px;
