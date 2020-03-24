@@ -467,15 +467,14 @@ h2 {
 }
 @media (max-width: 575.98px) {
   .project-header {
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
   .project-header img {
     width: 100%;
     margin: auto;
-    height: 350px;
-    object-fit: cover;
   }
+
   .side-tracker {
     display: none;
   }
