@@ -55,11 +55,11 @@
           <img src="./img/konokona/bannerphoto.png" alt="artist banner" />
         </section>
       </header>
-      <aside class="side-tracker">
+      <aside class="animated fadeInDown hide-bar">
         <ol>
           <li><a href="#problemstatement">Project Scope</a></li>
           <li><a href="#projectmade">Results</a></li>
-          <li><a href="#Process">Process</a></li>
+          <li><a href="#process">Process</a></li>
           <li><a href="#prototype">Prototype</a></li>
           <li><a href="#keytakeaways">Key Takeaways</a></li>
         </ol>
@@ -159,17 +159,6 @@
       </section>
       <section id="process" class="process">
         <div>
-          <div class="process-block">
-            <h2>Mobile</h2>
-            <img src="./img/konokona/mobilefriendly.png" alt="mobile view" />
-            <p>
-              Application is also on mobile view as a lot of artists has other
-              jobs in the service industry, and cannot easily access a computer.
-              However, when I did my initial interviews, many artists would not
-              apply for an application through their phones due to the fear of
-              making mistakes.
-            </p>
-          </div>
           <div class="process-block">
             <h2>Process</h2>
             <img src="./img/konokona/sticky.jpg" alt="afinity graph" />
@@ -333,18 +322,6 @@
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="./js/index.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-      <script>
-        window.onload = function() {
-          lax.setup(); // init
-
-          const updateLax = () => {
-            lax.update(window.scrollY);
-            window.requestAnimationFrame(updateLax);
-          };
-
-          window.requestAnimationFrame(updateLax);
-        };
-      </script>
     </body>
   </html>
 </html>

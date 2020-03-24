@@ -9,4 +9,17 @@ $(document).ready(function() {
   $(".fa-times").click(function() {
     $(".mobile-menu").removeClass("open");
   });
+
+  $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    var liOne = $("#problemstatement").offset().top;
+
+    if (scrollTop > liOne) {
+      //You are now past div one
+      $("aside").removeClass("hide-bar");
+      $("aside").addClass("side-tracker");
+    } else {
+      $("aside").addClass("hide-bar");
+    }
+  });
 });
