@@ -671,18 +671,24 @@ h2 {
 }
 
 .side-tracker ol {
-  color: rgb(69, 68, 71);
+  color: rgb(161, 161, 161);
 }
 .side-tracker li {
   line-height: 4em;
   font-size: 1.1em;
 }
 .side-tracker a {
-  color: rgb(69, 68, 71);
+  color: rgb(161, 161, 161);
 }
 
 .active {
-  color: green;
+  color: black;
+  font-weight: bold;
+}
+
+.active a {
+  color: black;
+  font-weight: bold;
 }
 
 /*personal*/
