@@ -80,7 +80,7 @@ p {
   content: "";
   position: absolute;
   height: 0px;
-  top: 30px;
+  top: 25px;
   left: 0;
   background: #525370;
   width: 100%;
@@ -91,7 +91,7 @@ p {
   content: "";
   position: absolute;
   height: 8px;
-  top: 25px;
+  transform: translateY(2px);
 }
 
 .header-nav h2 {
