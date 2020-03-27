@@ -9,4 +9,15 @@ $(document).ready(function() {
   $(".fa-times").click(function() {
     $(".mobile-menu").removeClass("open");
   });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() < $(this).height()) {
+      $(".header-nav").css({ "background-color": "transparent" });
+    } else {
+      $(".header-nav").css({
+        "background-color": "white",
+        transition: "background-color 200ms linear"
+      });
+    }
+  });
 });
