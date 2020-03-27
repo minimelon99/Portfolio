@@ -1,14 +1,4 @@
 $(document).ready(function() {
-  // Write your code in here !
-  $(".fa-bars").click(function() {
-    //every time you click it, it add a class called "open"
-    //toggle means if it's not there, add it, if it's there, remove it
-    $(".mobile-menu").addClass("open");
-  });
-
-  $(".fa-times").click(function() {
-    $(".mobile-menu").removeClass("open");
-  });
   /////////////scrolling stuff
   // var home = $(".home");
   // if (!home) {
@@ -26,15 +16,16 @@ $(document).ready(function() {
       $("aside").removeClass("side-tracker");
       $("aside").addClass("hide-bar");
     }
-    $(".side-tracker a").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $($(this).attr("href")).offset().top
-        },
-        500
-      );
-      return false;
-    });
+    // $(".side-tracker a").click(function(event) {
+
+    //   $("html, body").animate(
+    //     {
+    //       scrollTop: $($(this).attr("href")).offset().top
+    //     },
+    //     500
+    //   );
+    //   return false;
+    // });
 
     // Cache selectors
     var topMenu = $(".side-tracker"),
