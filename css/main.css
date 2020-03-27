@@ -42,13 +42,14 @@ p {
 }
 /*header navigation here HEADER IS UNIVERSAALLLl*/
 .header-nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+  width: 75%;
+  margin: 0 10%;
+  z-index: 10;
 }
 @media (max-width: 767.98px) {
   .header-nav {
@@ -152,7 +153,7 @@ p {
 }
 /*front page herrooooo*/
 .fp-hero {
-  padding: 150px 40px;
+  padding: 200px 40px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -292,7 +293,7 @@ h2 {
   margin: auto;
   display: flex;
   justify-content: space-around;
-  padding: 150px 0;
+  padding: 200px 0;
 }
 
 .about-hero img {
@@ -433,7 +434,7 @@ h2 {
 }
 .project-header {
   text-align: center;
-  padding: 100px 0 10px 0;
+  padding: 150px 0 10px 0;
 }
 .project-header img {
   width: 70%;
@@ -666,7 +667,7 @@ h2 {
 
 .side-tracker {
   position: sticky;
-  top: 20%;
+  top: 35%;
   padding-left: 100px;
 }
 
