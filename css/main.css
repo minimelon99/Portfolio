@@ -675,8 +675,9 @@ h2 {
   padding-left: 100px;
 }
 
-.side-tracker ol {
+.side-tracker ul {
   color: rgb(161, 161, 161);
+  list-style: none;
 }
 .side-tracker li {
   line-height: 4em;
