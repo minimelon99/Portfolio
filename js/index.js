@@ -26,15 +26,16 @@ $(document).ready(function() {
       $("aside").removeClass("side-tracker");
       $("aside").addClass("hide-bar");
     }
-    $(".side-tracker a").click(function() {
-      $("html, body").animate(
-        {
-          scrollTop: $($(this).attr("href")).offset().top
-        },
-        500
-      );
-      return false;
-    });
+    // $(".side-tracker a").click(function(event) {
+
+    //   $("html, body").animate(
+    //     {
+    //       scrollTop: $($(this).attr("href")).offset().top
+    //     },
+    //     500
+    //   );
+    //   return false;
+    // });
 
     // Cache selectors
     var topMenu = $(".side-tracker"),
