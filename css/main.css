@@ -27,7 +27,7 @@ a {
 }
 
 p {
-  color: #3b3b3b;
+  color: #2d2d2d;
   font-size: 20px;
   line-height: 2;
 }
@@ -165,7 +165,7 @@ p {
 
 .brown-bar {
   border: 0;
-  border-top: 8px solid rgba(102, 102, 102, 0.75);
+  border-top: 8px solid white;
   max-width: 350px;
 }
 
