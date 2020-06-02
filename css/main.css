@@ -704,21 +704,32 @@ h2 {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding: 200px 0;
+  padding: 200px 0 0 0;
 }
 
 .personal-gallery {
-  display: flex;
   padding: 50px 0 0 0;
+  column-count: 3;
+  column-gap: 1em;
 }
-.personal-gallery :first-child {
-  width: 25%;
+.item {
+  /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
 }
+
 @media (max-width: 575.98px) {
   .error {
     width: 80%;
     margin: auto;
     align-self: center;
     padding-top: 100px;
+  }
+}
+@media (max-width: 575.98px) {
+  .personal-gallery {
+    column-count: 2;
   }
 }
