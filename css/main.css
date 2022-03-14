@@ -556,7 +556,7 @@ h2 {
   box-shadow: 1px 2px 10px rgba(154, 154, 154, 0.5);
 }
 
-.showcase h2 {
+.showcase div{
   padding: 25px 35px;
   width: 40%;
 }
@@ -579,7 +579,7 @@ h2 {
     margin: auto;
     padding: 0 20px;
   }
-  .showcase h2 {
+  .showcase div {
     width: 90%;
     padding: 0 25px 25px 25px;
   }
