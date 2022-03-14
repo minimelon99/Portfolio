@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <!-- Place your kit's code here -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-129813954-2"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-129813954-2");
+      </script>
+
+      <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+      <script
+        src="https://kit.fontawesome.com/ba013bbe16.js"
+        crossorigin="anonymous"
+      ></script>
+      <link
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Overpass&display=swap"
+        rel="stylesheet"
+      />
+      <title>CoPilot AI Billing Module</title>
+      <link rel="icon" type="image/png" href="img/fullhead_happy.png" />
+
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+      <header class="project4-bg ">
+        <nav class="header-nav ">
+          <div>
+            <a href="index.html"><h2>Amy Zhu</h2></a>
+          </div>
+          <div class="menu desktop-menu">
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="personalwork.html">Personal Work</a></li>
+              <li><a href="aboutme.html">About me</a></li>
+              <!-- <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+          </div>
+          <i class="fa fa-bars fa-2x"></i>
+          <div class="menu mobile-menu">
+            <i class="fas fa-times fa-2x"></i>
+            <ul class="mobile-styles">
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="personalwork.html">Personal Work</a></li>
+              <li><a href="aboutme.html">About me</a></li>
+              <!-- <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+          </div>
+        </nav>
+        <section class="project-header animated fadeInUp">
+          <h1>CoPilot AI Billing Module</h1>
+          <p>
+            Designing a scalable billing module to manage a customer's billing
+          </p>
+          <img
+            src="./img/billing/mainpage.png"
+            alt="billing hero"
+            loading="lazy"
+          />
+        </section>
+      </header>
+      <section id="problemstatement" class="project-container">
+        <!-- <div>
+          <div class="project-define">
+            <h2>my role</h2>
+            <p>UX research, vision & strategy, design</p>
+          </div>
+          <div class="project-define">
+            <h2>timeline</h2>
+            <p>
+              6 month
+            </p>
+          </div>
+        </div> -->
+        <div class="problem-statement">
+          <img
+            src="./img/billing/problems.png"
+            loading="lazy"
+            alt="problems"
+          />
+          <div class="statement">
+            <h2>Context</h2>
+            <p>
+              Our customer success team spends a lot of time on the administration of customer billing - which is quite manual, tedious, and error-prone.
+            </p>
+            <p>- CS spends 30 min/day on billing
+              <br/>
+            - Director of Sales & CS spends 5 hours/week</p>
+            <h2>My role</h2>
+            <p>
+              Look into what was "manual, tedious and error-prone" and provide a scalable solution for the team. Own the end-to-end design.
+            </p>
+            <h2>Outcomes</h2>
+            <p>
+             Created a scalable billing module which integrates into our platform, as well as other products. Reduced the time spend on billing per CS.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--section split-->
+      <section id="process" class="process">
+        <div>
+          <div class="process-block">
+            <h2>Research</h2>
+            <p>
+              I conducted expert interviews with customer success team and directors to understand their pain points about billing and mapped out a user journey to visualize the issues</p>
+            <img
+              src="./img/billing/journeymap.png"
+              alt="user journey"
+              loading="lazy"
+            />
+              <p>To summarize the problems found:</p>
+              <p>1. When updating billing, there was no connection between the software and the CRM, often creating errors when the CS rep forgets to update a software. This was a problem when changing and cancelling subscriptions. (esp when scheduling ahead of time)</p>
+              <p>2. Coupons were being misused, creating billing errors</p>
+              <p>3. Lack of automated subscription renewal reminders, causing the customer to think they "got overcharged".</p>
+              <p>4. Customer does not have any form of visibility towards their billing</p>
+              <p>5. Referral discounts are managed and applied manually</p>
+              <p>6. Stripe was not 100% compatible with our data reporting platform, hence workarounds with coupon was used</p>
+
+          </div>
+          <div class="process-block">
+            <h2>Vision & Prioritization</h2>
+            <p>
+              After understanding the problems, I worked with my PM to break the issues down into smaller categories, both defining the vision of what this billing module would entail, and the strategy to get there.
+            </p>
+            <img
+              src="./img/billing/visionstories.png"
+              alt="vision stories"
+              loading="lazy"
+            />
+            <p>We decided to proceed with building an internal billing module, focusing on:
+              <br/>
+              1. Billing Visibility: ability to see your customer's billing without going to Stripe
+              <br/>
+              2. Subscription Change: Ability to change your customer's subscription directly on the platform
+            </p>
+          </div>
+          <div class="process-block">
+            <h2>Competitive Analysis</h2>
+            <p>
+              I looked at current billing modules, especially at companies with multiple products Adobe, Atlassian, Apple, Telus and Nintendo
+             </p>
+            <img
+              src="./img/billing/competitoranalysis.png"
+              alt="competitor analysis"
+              loading="lazy"
+            />
+            <p>
+             I looked at current billing modules, especially at companies with multiple products Adobe, Atlassian, Apple, Telus and Nintendo
+            </p>
+          </div>
+          <div class="process-block">
+            <h2>Userflow</h2>
+            <p>
+              Mapped out the user journey of what the customer would be going through.
+            </p>
+            <img
+              src="./img/billing/detaileduserflow.png"
+              alt="info arch"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-block">
+            <h2>Wireframes for Billing Visibility</h2>
+            <p>
+              Brainstormed different locations where the billing could be located. While the user testing went well, I got feedback that the design was not scalable, considering the direction where the company is headed.
+            </p>
+            <img
+              src="./img/billing/wireframe.png"
+              alt="wireframe"
+              loading="lazy"
+            />
+            <img
+            src="./img/billing/vision.png"
+            alt="vision"
+            loading="lazy"
+          />
+          <p>
+            I still got feedback that the page can be more scalable if we looked at how receipts and components worked. I iterated my design based on that feedback. 
+          </p>
+          <p>I separated the Current Subscription, Next Invoice and Most Recent Invoice into different components</p>
+          <img
+          src="./img/billing/launched_version.png"
+          alt="launched billing"
+          loading="lazy"
+        />
+          </div>
+          <div class="process-block">
+            <h2>Card Components for Subscription Change</h2>
+            <p>
+              I also brainstormed different ways the card components for subscription change can look.
+            </p>
+            <img
+              src="./img/billing/card_components.png"
+              alt="card prototypes"
+              loading="lazy"
+            />
+            <p>
+              Finalized Version
+            </p>
+            <img
+              src="./img/billing/card_finalized.png"
+              alt="cards finalized"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-block">
+            <h2>Edge cases</h2>
+            <p>
+              Due to the complexity of billing, there was over 15 edge cases just to change a subscription. Worked really close with engineering and PM to tackle the edge cases.
+            </p>
+            <img src="./img/billing/highleveledge.png" alt="edge cases" loading="lazy" />
+          </div>
+          <div class="process-block">
+            <h2>Copy</h2>
+            <p>
+              Due to the complexity of billing, the team had to be aligned on the terminologies we used, both on product and code. Documentation was a must have to ensure the definitions were accurate
+            </p>
+            <p>Some examples includes:
+              <br/>
+              1. Subtotal, Total, Amount Due
+              <br/>
+              2. Coupon, Discount, Credit Balance
+              <br/>
+              3. Old Product, Legacy Product, Archived Price
+            </p>
+            <img
+              src="./img/billing/terminology.png"
+              alt="info arch"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-block">
+            <h2>Outcome</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/abafb71091e7485b8753b86acd801fdb" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+          </div>
+        </div>
+      </section>
+      <section id="projectmade">
+        <article class="showcase">
+          <img
+          src="./img/billing/launched_version.png"
+          alt="launched version"
+          loading="lazy"/>
+          <div>
+          <h2>
+            Ability to view a customer's subscription & the status of their subscription.
+          </h2>
+        </div>
+        </article>
+        <article class="showcase reverse">
+          <img 
+          src="./img/billing/subscription_change.png"
+          alt="subscription change"
+          loading="lazy"/>
+          <div>
+          <h2>Can choose which subscription to change into</h2>
+        </div>
+        </article>
+        <article class="showcase">
+        <img src="./img/billing/checkout_page.png"
+        alt="checkout page"
+        loading="lazy"/>
+        <div>
+        <h2>
+          Update subscription immediately or next billing cycle
+        </h2>
+      </div>
+        </article>
+        <article class="showcase reverse">
+          <img 
+          src="./img/billing/Select_a_coupon.png"
+          alt="add a coupon"
+          loading="lazy"/>
+          <div>
+          <h2>
+            Add or remove a coupon
+          </h2>
+        </div>
+        </article>
+      </section>
+      <!--section split-->
+      <section id="keytakeaways" class="key-takeaways">
+        <h2>Key Takeaways</h2>
+        <div class="takeaways">
+          <div>
+            <h3>Documentation is Therapeutic</h3>
+            <p>
+           Prior to this project, I did not document my work. Since this project required so much collaboration with engineering and stakeholders, a clear documentation was necessary to communicate all the edgecases and changes
+            </p>
+          </div>
+          <div>
+            <h3>Stakeholder Management</h3>
+            <p>
+              I learned so much on stakeholder management, I wrote a <a href="https://medium.com/design-bootcamp/how-i-went-from-a-design-punching-bag-to-a-lead-designer-113d47db1970">medium article</a> about it.
+            </p>
+          </div>
+          <div>
+            <h3>Understanding Scalability & Long term Visions</h3>
+            <p>
+              Prior to this project, a lot of what I worked on was focused on short term benefits that was not scalable long term. After this project, I understood why having long term vision is important.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <a href="mailto:yinazhu99@gmail.com" aria-label="Email"
+          ><i class="far fa-envelope fa-lg"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/amy-zhu-3233ab115/"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin fa-lg"></i
+        ></a>
+        <a href="https://www.instagram.com/minimelon99/" aria-label="Instagram">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://github.com/minimelon99" aria-label="Github"
+          ><i class="fab fa-github fa-lg"></i
+        ></a>
+        <p>Designed & Coded by Amy Zhu | 2022</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="./js/menu.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+      <script></script>
+    </body>
+  </html>
+</html>

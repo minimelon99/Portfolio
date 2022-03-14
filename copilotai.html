@@ -72,14 +72,6 @@
           />
         </section>
       </header>
-      <aside class="animated fadeInDown">
-        <ul>
-          <li><a href="#problemstatement">Project Scope</a></li>
-          <li><a href="#projectmade">Results</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#keytakeaways">Key Takeaways</a></li>
-        </ul>
-      </aside>
       <section id="problemstatement" class="project-container">
         <div>
           <div class="project-define">
@@ -136,10 +128,12 @@
             muted
             loading="lazy"
           ></video>
+          <div>
           <h2>
             Redesigned the onboarding user interface components that is more
             user friendly and easy to understand
           </h2>
+        </div>
         </article>
         <article class="showcase reverse">
           <video
@@ -150,6 +144,7 @@
             muted
             loading="lazy"
           ></video>
+          <div>
           <h2>
             The inbox and message sending is the key userflow for our users. I
             have to ensure this step is:
@@ -159,6 +154,7 @@
             <li>Information for the user</li>
             <li>Fast but accurate.</li>
           </h2>
+        </div>
         </article>
         <article class="showcase">
           <video
@@ -169,7 +165,9 @@
             muted
             loading="lazy"
           ></video>
+          <div>
           <h2>See the message history with the prospects and manage tags</h2>
+        </div>
         </article>
       </section>
       <section id="process" class="process">
@@ -297,24 +295,12 @@
         <a href="https://github.com/minimelon99" aria-label="Github"
           ><i class="fab fa-github fa-lg"></i
         ></a>
-        <p>Designed & Coded by Amy Zhu | 2020</p>
+        <p>Designed & Coded by Amy Zhu | 2022</p>
       </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="./js/index.js"></script>
       <script type="text/javascript" src="./js/menu.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-      <script>
-        window.onload = function () {
-          lax.setup(); // init
-
-          const updateLax = () => {
-            lax.update(window.scrollY);
-            window.requestAnimationFrame(updateLax);
-          };
-
-          window.requestAnimationFrame(updateLax);
-        };
-      </script>
+    
     </body>
   </html>
 </html>
