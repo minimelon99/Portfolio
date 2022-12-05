@@ -524,6 +524,7 @@ h2 {
   width: 40%;
   padding-left: 25px;
 }
+
 @media (max-width: 575.98px) {
   .problem-statement {
     display: block;

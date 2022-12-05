@@ -35,7 +35,7 @@
       <link rel="icon" type="image/png" href="img/fullhead_happy.png" />
 
       <link rel="stylesheet" type="text/css" href="css/main.css" />
-      <script language="javascript">
+      <!-- <script language="javascript">
         var password; 
         var pass1="chicken"; 
         password=prompt('Enter Password',''); 
@@ -43,7 +43,7 @@
         alert('Correct Password! Click OK to Enter!'); 
         else { window.location="http://yinazhu.com/"; 
         } 
-        </script>
+        </script> -->
     </head>
     <body>
       <header class="project5-bg">
@@ -85,8 +85,8 @@
       <section id="problemstatement" class="project-container">
         <div class="problem-statement">
           <img
-            src="./img/konokona/animeexpo.jpg"
-            alt="animeexpo"
+            src="./img/POS/existingplatform.png"
+            alt="existing platform"
             loading="lazy"
           />
           <div class="statement">
@@ -98,54 +98,87 @@
             </p>
             <h2>Company strategy</h2>
             <p>
-              The goal is to modularize pieces of our giant product and turn it into solutions that integrates seamlessly with each other.
+              The goal is to modularize pieces of our giant product and turn it into solutions that integrates seamlessly with each other. I was responsible for the point-of-sale
             </p>
             <h2>Outcome</h2>
             <p>
-              As the lead designer on the in-store experience team, our short term goal is to release the modularized point-of-sale by early 2023 so our strategic partner can pilot in-stores.
+              Our short term goal is to release the modularized point-of-sale by early 2023, so our strategic partner can pilot in-stores.
             </p>
             <p>Our long term goal is to reduce the transaction time by 30%</p>
           </div>
         </div>
+    
       </section>
+     
+
       <section id="process" class="process">
         <div>
           <div class="process-block">
+            <h2>Design challenges</h2>
+            <p>The company is transitioning from a sales-led to a product-led process. There is no process established on how we work together.</p>
+            <p>Design is considered an afterthought. Our cross-functional stakeholders often do not know how to collaborate with us from the discovery phase.</p>
+            <p>A lot of ambiguity. The only direction given is “modularize the POS” and “needs to work on all devices” by Q1 of 2023</p>
+          </div>
+          <div class="process-block wireframes">
             <h2>Research</h2>
+            <p>
+              I went on on-site visits, conducted customer interviews with former sales reps, and consulted the CX team to understand what:
+              <br/>
+              1. The current in-store experience is like today
+              <br/>
+              2. Painpoints associated with the process today
+            </p>
             <img
-              src="./img/konokona/sticky.jpg"
-              alt="afinity graph"
+              src="./img/POS/onsite1.png"
+              alt="onsite telus"
               loading="lazy"
             />
-            <p>
-              I started the project by interviewing several artists and
-              organizers. I created an affinity map with the information that I
-              obtained from them
-            </p>
-            <p>My key learnings were:
+            <img
+              src="./img/POS/onsite2.png"
+              alt="onsite koodo"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-block">
+            <h2>Key findings</h2>
+            <p>I mapped out a user journey from the outcomes of my research.</p>
+            <img
+              src="./img/POS/userjourneyins.png"
+              alt="in-store user journey"
+              loading="lazy"
+            />
+            <p>The average time of transaction is around 45 minutes. Some of the reasons why it takes so long:
               <br/>
-              1. Artist has no transparency towards when a convention will open their applications, as it's not the first thing advertised on the event website.
+              1. There is a minimum of 2 platforms required to process a transaction. Depending on the complexity, it can be more than 4. (Activation, transactions, warranty, trade-ins.)
               <br/>
-              2. Finding the page to the application also takes time. If your lucky they will have maillist. If not, you have to check weekly. Put this at scale with 5+ conventions.
+              2. Switch & login between multiple systems; forcing the user to remember multiple passwords. The experience is worse for multi-carrier clients.
               <br/>
-              3. A lot of artist relies on discord or facebook community groups to get reminded when applications open.
-              <br>
-              4. This often happens 6 month before the event. Should artist miss it, it creates a painpoint with how much inventory they should order from the manufacturer.
+              3. Contract signing requires printing and re-uploading into multiple systems
+              <br/>
+              4. Duplicating data entry into multiple systems for the sales rep. Wrong entry of data means reconciliation later on.
+              <br/>
+              5. End consumers has to repeat themselves twice to provide the same information
             </p>
           </div>
           <div class="process-block">
             <h2>Persona</h2>
+            <p>
+              I also created 2 personas for the people who will be impacted by this experience.
+            </p>
             <img
-              src="./img/konokona/artist.png"
-              alt="artist persona"
+              src="./img/POS/salesreppersona.png"
+              alt="sales rep persona"
               loading="lazy"
             />
-            <p>
-              Previously being an artist, and knowing this space, I created the persona of the artist alley artist that travels throughout North America during convention season
-            </p>
+            <img
+              src="./img/POS/personaendconsumer.png"
+              alt="end consumer persona"
+              loading="lazy"
+            />
+            
           </div>
           <div class="process-block">
-            <h2>Information Architecture</h2>
+            <h2>Validating our direction</h2>
             <img
               src="./img/konokona/info arch.png"
               alt="information architecture"
@@ -157,7 +190,7 @@
             </p>
           </div>
           <div class="process-block">
-            <h2>Storyboard</h2>
+            <h2>Competitive analysis</h2>
             <img
               src="./img/konokona/storyboard.jpg"
               alt="storyboard"
@@ -169,7 +202,7 @@
             </p>
           </div>
           <div class="process-block wireframes">
-            <h2>Wireframes</h2>
+            <h2>Userflow</h2>
             <img src="./img/konokona/wf1.jpg" alt="wireframes" loading="lazy" />
             <img src="./img/konokona/wf3.jpg" alt="wireframes" loading="lazy" />
             <img src="./img/konokona/HomePage.png" alt="wireframes" loading="lazy" />
