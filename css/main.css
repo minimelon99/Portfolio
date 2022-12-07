@@ -444,7 +444,9 @@ h2 {
 }
 .project4-bg {
   background-color: #64beba;
-
+}
+.project5-bg {
+  background-color: #9ECFFF;
 }
 .project-header {
   text-align: center;
@@ -522,6 +524,7 @@ h2 {
   width: 40%;
   padding-left: 25px;
 }
+
 @media (max-width: 575.98px) {
   .problem-statement {
     display: block;

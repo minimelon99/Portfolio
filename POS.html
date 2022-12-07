@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <!-- Place your kit's code here -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-129813954-2"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-129813954-2");
+      </script>
+
+      <link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+      <script
+        src="https://kit.fontawesome.com/ba013bbe16.js"
+        crossorigin="anonymous"
+      ></script>
+      <link
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Overpass&display=swap"
+        rel="stylesheet"
+      />
+      <title>Point of sale</title>
+      <link rel="icon" type="image/png" href="img/fullhead_happy.png" />
+
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+      <!-- <script language="javascript">
+        var password; 
+        var pass1="chicken"; 
+        password=prompt('Enter Password',''); 
+        if (password==pass1) 
+        alert('Correct Password! Click OK to Enter!'); 
+        else { window.location="http://yinazhu.com/"; 
+        } 
+        </script> -->
+    </head>
+    <body>
+      <header class="project5-bg">
+        <nav class="header-nav ">
+          <div>
+            <a href="index.html"><h2>Amy Zhu</h2></a>
+          </div>
+          <div class="menu desktop-menu">
+            <ul>
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="personalwork.html">Personal Work</a></li>
+              <li><a href="aboutme.html">About me</a></li>
+              <!-- <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+          </div>
+          <i class="fa fa-bars fa-2x"></i>
+          <div class="menu mobile-menu">
+            <i class="fas fa-times fa-2x"></i>
+            <ul class="mobile-styles">
+              <li><a href="index.html">Portfolio</a></li>
+              <li><a href="personalwork.html">Personal Work</a></li>
+              <li><a href="aboutme.html">About me</a></li>
+              <!-- <li><a href="contact.html">Contact</a></li> -->
+            </ul>
+          </div>
+        </nav>
+        <section class="project-header animated fadeInUp">
+          <h1>Point-of-sale for telecom retail</h1>
+          <p>
+            Reimagining the telecom retail experience, starting from a point-of-sale.
+          </p>
+          <img
+            src="./img/pos/posbanner.png"
+            alt="artist banner"
+            loading="lazy"
+          />
+        </section>
+      </header>
+      <section id="problemstatement" class="project-container">
+        <div class="problem-statement">
+          <img
+            src="./img/POS/existingplatform.png"
+            alt="existing platform"
+            loading="lazy"
+          />
+          <div class="statement">
+            <h2>Business problem</h2>
+            <p>
+              We have a 20-year-old feature-bloated product, severely slowing our feature velocity; blocking the company’s ability to innovate.
+            </p>
+            <p>Our clients also wanted pieces of our solutions to solve their own business needs. However, this cannot be achieved, as we can only give them all or nothing. 
+            </p>
+            <h2>Company strategy</h2>
+            <p>
+              The goal is to modularize pieces of our giant product and turn it into solutions that integrates seamlessly with each other. I was responsible for the point-of-sale
+            </p>
+            <h2>Outcome</h2>
+            <p>
+              Our short term goal is to release the modularized point-of-sale by early 2023, so our strategic partner can pilot in-stores.
+            </p>
+            <p>Our long term goal is to reduce the transaction time by 30%</p>
+          </div>
+        </div>
+    
+      </section>
+     
+
+      <section id="process" class="process">
+        <div>
+          <div class="process-block">
+            <h2>Design challenges</h2>
+            <p>The company is transitioning from a sales-led to a product-led process. There is no process established on how we work together.</p>
+            <p>Design is considered an afterthought. Our cross-functional stakeholders often do not know how to collaborate with us from the discovery phase.</p>
+            <p>A lot of ambiguity. The only direction given is “modularize the POS” and “needs to work on all devices” by Q1 of 2023</p>
+          </div>
+          <div class="process-block wireframes">
+            <h2>Research</h2>
+            <p>
+              I went on on-site visits, conducted customer interviews with former sales reps, and consulted the CX team to understand what:
+              <br/>
+              1. The current in-store experience is like today
+              <br/>
+              2. Painpoints associated with the process today
+            </p>
+            <img
+              src="./img/POS/onsite1.png"
+              alt="onsite telus"
+              loading="lazy"
+            />
+            <img
+              src="./img/POS/onsite2.png"
+              alt="onsite koodo"
+              loading="lazy"
+            />
+          </div>
+          <div class="process-block">
+            <h2>Key findings</h2>
+            <p>I mapped out a user journey from the outcomes of my research.</p>
+            <img
+              src="./img/POS/userjourneyins.png"
+              alt="in-store user journey"
+              loading="lazy"
+            />
+            <p>The average time of transaction is around 45 minutes. Some of the reasons why it takes so long:
+              <br/>
+              1. There is a minimum of 2 platforms required to process a transaction. Depending on the complexity, it can be more than 4. (Activation, transactions, warranty, trade-ins.)
+              <br/>
+              2. Switch & login between multiple systems; forcing the user to remember multiple passwords. The experience is worse for multi-carrier clients.
+              <br/>
+              3. Contract signing requires printing and re-uploading into multiple systems
+              <br/>
+              4. Duplicating data entry into multiple systems for the sales rep. Wrong entry of data means reconciliation later on.
+              <br/>
+              5. End consumers has to repeat themselves twice to provide the same information
+            </p>
+          </div>
+          <div class="process-block">
+            <h2>Persona</h2>
+            <p>
+              I also created 2 personas to understand the motivations of the users who are impacted by this experience
+            </p>
+            <img
+              src="./img/POS/salesreppersona.png"
+              alt="sales rep persona"
+              loading="lazy"
+            />
+            <img
+              src="./img/POS/personaendconsumer.png"
+              alt="end consumer persona"
+              loading="lazy"
+            />
+            
+          </div>
+          <div class="process-block wireframes">
+            <h2>Validating our direction</h2>
+            <p>
+              I created an end-to-end in-store experience vision and shared it with clients to align on the direction we are headed. We were able to validate the direction of frictionless experience on 1 platform.
+            </p>
+            <p>We also learned that our clients prioritized speed above everything. Every impact made has to reduce the transaction time. </p>
+            <img
+              src="./img/POS/mockdash.png"
+              alt="dashboard mockup"
+              loading="lazy"
+            />
+            <img
+            src="./img/POS/storydash.png"
+            alt="story"
+            loading="lazy"
+          />
+            
+          </div>
+          <div class="process-block wireframes">
+            <h2>Competitive analysis</h2>
+            <p>
+            I looked at industry leading point-of-sales on the market like Shopify and Square. I also collaborated with the team to understand telecom specific use cases that the design needs to be aware of.
+            </p>
+            <img
+              src="./img/POS/cp1.png"
+              alt="competitve analysis"
+              loading="lazy"
+            />
+            <img
+            src="./img/POS/cp2.png"
+            alt="competitve analysis"
+            loading="lazy"
+          />
+          <img
+          src="./img/POS/cp3.png"
+          alt="competitve analysis"
+          loading="lazy"
+        />
+        <img
+        src="./img/POS/cp4.png"
+        alt="competitve analysis"
+        loading="lazy"
+      />
+          </div>
+          <div class="process-block">
+            <h2>Userflow</h2>
+            <p>
+              As our current product is huge in terms of features, our team decided to start exploring the point-of-sale from a non-serialized item (anything without IMEI) transaction.
+            </p>
+            <img src="./img/POS/userflow.png" alt="wireframes" loading="lazy" />
+          </div>
+          <div class="process-block wireframes">
+            <h2>Design vision</h2>
+            <p>
+              I applied the feedback we got from our clients and explored multiple concepts, as well as the high-level vision.
+            </p>
+            <img
+              src="./img/POS/dashboardp.png"
+              alt="must have good to have optional"
+              loading="lazy"
+            />
+            <img
+              src="./img/POS/cartp.png"
+              alt="must have good to have optional"
+              loading="lazy"
+            />
+          <img
+            src="./img/POS/discount.png"
+            alt="must have good to have optional"
+            loading="lazy"
+          />
+          <img
+          src="./img/POS/cart2.png"
+          alt="must have good to have optional"
+          loading="lazy"
+        />
+            <p>I showed the long-term vision to product & engineering and collaborated with them on narrowing down a MVP. Our assumption was: 
+              <br/>
+              - Ability to process a non-serialized transaction (non-IMEI)
+              <br/>
+              - Ability to discount manually
+              <br/>
+              - Email & print receipt only
+              <br/>
+              - No cash transactions
+            </p>
+          </div>
+          <div class="process-block">
+            <h2>Static & Dynamic information for the Application Process</h2>
+            <img
+              src="./img/konokona/staticdynamic.png"
+              alt="static and dynamic information"
+              loading="lazy"
+            />
+            <p>
+              To decrease the time for artists to repeated enter the same information during the application process, I split them into
+              two categories, the static and the dynamic information
+            </p>
+            <p>
+              <b>Static</b> Information being the information that never
+              changes. Things like name, address, portfolio, website. All
+              organizers need this information, and the user should not have to
+              repeatedly input this information
+            </p>
+            <p>
+              <b>Dynamic</b> Information being the information that changes. Who
+              your table partner is and what your table name will be is always
+              something that constantly gets changed
+            </p>
+            <p>This right here was the "AHA moment" I got from artists during usability testing</p>
+          </div>
+          <div class="process-block">
+            <h2>Mobile</h2>
+            <img
+              src="./img/konokona/mobilefriendly.png"
+              alt="mobile view"
+              loading="lazy"
+            />
+            <p>
+              Application is also on mobile view as a lot of artists has other
+              jobs in the service industry, and cannot easily access a computer.
+              However, when I did my initial interviews, many artists would not
+              apply for an application through their phones due to the fear of
+              making mistakes.
+            </p>
+          </div>
+          <div class="process-block">
+            <h2>Accessibility</h2>
+            <img
+              src="./img/konokona/accessibility.jpg"
+              alt="accessibility"
+              loading="lazy"
+            />
+            <p>
+              Half way through the project, I learned about designing for
+              accessibility, and realized that none of my colors passed
+              accessibility criterias. I changed the colors that didn't pass the
+              WCAG AA guidelines. The improved contrast ratio made the overall
+              design better.
+            </p>
+          </div>
+          <div class="process-block">
+            <h2>
+              Outcome
+            </h2>
+            <div style="position: relative; padding-bottom: 62.06896551724138%; height: 0;"><iframe src="https://www.loom.com/embed/4d685f1873254c1ea631d70dc07d538e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+            <p>My key accomplishments through this project is:</p>
+            <p>1. Getting the AHA moment out of artists attending anime conventions, as this would save them a lot of anxiety with table applications.
+              <br/>
+              2. Impressed the former CEO of Picatic, and was invited to their office.
+            </p>            
+          </div>
+        </div>
+      </section>
+      <section id="projectmade">
+        <article class="showcase">
+          <video
+            src="./img/konokona/artist1.mp4"
+            autoplay="autoplay"
+            loop
+            alt="front page"
+            muted
+            loading="lazy"
+          ></video>
+          <div>
+          <h2>Search for the upcoming anime conventions near you</h2>
+        </div>
+        </article>
+        <article class="showcase reverse">
+          <video
+            src="./img/konokona/artist2.mp4"
+            autoplay="autoplay"
+            loop
+            alt="convention information"
+            muted
+            loading="lazy"
+          ></video>
+          <div>
+          <h2>
+            Have all the key anime convention table information layed out for
+            artists, in a user friendly and accessible way
+          </h2>
+        </div>
+        </article>
+        <article class="showcase">
+          <video
+            src="./img/konokona/artist3.mp4"
+            autoplay="autoplay"
+            loop
+            alt="applying for tables"
+            muted
+            loading="lazy"
+          ></video>
+          <div>
+          <h2>Easy form to apply for tables within a few clicks</h2>
+        </div>
+        </article>
+        <article class="showcase reverse">
+          <video
+            src="./img/konokona/artist4.mp4"
+            autoplay="autoplay"
+            loop
+            alt="application process"
+            muted
+            loading="lazy"
+          ></video>
+          <div>
+          <h2>
+            Your personal information saved, so you don't have to input
+            repetitive information when applying to multiple artist alleys at
+            once
+          </h2>
+        </div>
+        </article>
+      </section>
+      <section id="keytakeaways" class="key-takeaways">
+        <h2>Key Takeaways</h2>
+        <div class="takeaways">
+          <div>
+            <h3>Thinking of Accessibility</h3>
+            <p>
+              After designing the first mock up iteration, I realized that the
+              color choice I used was not accessible to the colorblind. This
+              made me think more critically about my color choice, understanding
+              that accessibility is not an after thought but rather should be
+              considered at the start of my design process. Not only did it
+              improve my design for those who are colorblind, it improved my
+              design overall for everyone.
+            </p>
+          </div>
+          <div>
+            <h3>Successful Usertesting VS Good Design</h3>
+            <p>
+              After doing countless usertesting, I learned that just because it
+              was successful does not completely mean it was good. My users are
+              tech literate but used to a tedious process. When there were
+              certain features I was able to simplify, the “wow“ I saw on their
+              faces was when I knew the “Aha!“ moment came.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <a href="mailto:yinazhu99@gmail.com" aria-label="Email"
+          ><i class="far fa-envelope fa-lg"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/amy-zhu-3233ab115/"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin fa-lg"></i
+        ></a>
+        <a href="https://medium.com/@yinazhu99" aria-label="Medium">
+          <i class="fab fa-medium fa-lg"></i>
+        </a>
+        <a href="https://github.com/minimelon99" aria-label="Github"
+          ><i class="fab fa-github fa-lg"></i
+        ></a>
+        <p>Designed & Coded by Amy Zhu | 2022</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript" src="./js/menu.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    </body>
+  </html>
+</html>
