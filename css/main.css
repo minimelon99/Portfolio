@@ -608,6 +608,19 @@ h2 {
   width: 100%;
 }
 
+.process-statement {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 80px 0;
+  justify-content: center;
+}
+.process-statement img {
+  width: 40%;
+  padding-left: 25px;
+  align-self: center;
+}
+
 /*final product*/
 .wireframes img {
   width: 49%;
@@ -628,6 +641,13 @@ h2 {
     width: 100%;
     height: 350px;
     object-fit: contain;
+  }
+  .process-statement {
+    display: block;
+  }
+  .process-statement img {
+    width: 100%;
+    padding: 0;
   }
 }
 

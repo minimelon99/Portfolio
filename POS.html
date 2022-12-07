@@ -35,7 +35,7 @@
       <link rel="icon" type="image/png" href="img/fullhead_happy.png" />
 
       <link rel="stylesheet" type="text/css" href="css/main.css" />
-      <!-- <script language="javascript">
+      <script language="javascript">
         var password; 
         var pass1="chicken"; 
         password=prompt('Enter Password',''); 
@@ -43,7 +43,7 @@
         alert('Correct Password! Click OK to Enter!'); 
         else { window.location="http://yinazhu.com/"; 
         } 
-        </script> -->
+        </script>
     </head>
     <body>
       <header class="project5-bg">
@@ -123,11 +123,11 @@
             <h2>Research</h2>
             <p>
               I went on on-site visits, conducted customer interviews with former sales reps, and consulted the CX team to understand what:
-              <br/>
+            </p>
+            <p>   
               1. The current in-store experience is like today
               <br/>
-              2. Painpoints associated with the process today
-            </p>
+              2. Painpoints associated with the process today</p>
             <img
               src="./img/POS/onsite1.png"
               alt="onsite telus"
@@ -147,9 +147,9 @@
               alt="in-store user journey"
               loading="lazy"
             />
-            <p>The average time of transaction is around 45 minutes. Some of the reasons why it takes so long:
-              <br/>
-              1. There is a minimum of 2 platforms required to process a transaction. Depending on the complexity, it can be more than 4. (Activation, transactions, warranty, trade-ins.)
+            <p>The average time of transaction is around 45 minutes. Some of the reasons why it takes so long:             
+            </p>
+            <p> 1. There is a minimum of 2 platforms required to process a transaction. Depending on the complexity, it can be more than 4. (Activation, transactions, warranty, trade-ins.)
               <br/>
               2. Switch & login between multiple systems; forcing the user to remember multiple passwords. The experience is worse for multi-carrier clients.
               <br/>
@@ -228,193 +228,151 @@
             </p>
             <img src="./img/POS/userflow.png" alt="wireframes" loading="lazy" />
           </div>
-          <div class="process-block wireframes">
+          <div class="process-block">
             <h2>Design vision</h2>
             <p>
               I applied the feedback we got from our clients and explored multiple concepts, as well as the high-level vision.
             </p>
             <img
-              src="./img/POS/dashboardp.png"
-              alt="must have good to have optional"
+              src="./img/POS/screenshots.png"
+              alt="vision dashboard"
               loading="lazy"
             />
-            <img
-              src="./img/POS/cartp.png"
-              alt="must have good to have optional"
-              loading="lazy"
-            />
-          <img
-            src="./img/POS/discount.png"
-            alt="must have good to have optional"
-            loading="lazy"
-          />
-          <img
-          src="./img/POS/cart2.png"
-          alt="must have good to have optional"
-          loading="lazy"
-        />
             <p>I showed the long-term vision to product & engineering and collaborated with them on narrowing down a MVP. Our assumption was: 
-              <br/>
+            </p>
+            <p> 
               - Ability to process a non-serialized transaction (non-IMEI)
               <br/>
               - Ability to discount manually
               <br/>
               - Email & print receipt only
               <br/>
-              - No cash transactions
+              - No cash transactions</p>
+          </div>
+          <div class="process-statement">
+         
+          <div> 
+            <h2>Creating the MVP with clients</h2>
+            <p>
+              We validated the design vision and MVP with our clients to see if it provides enough value for a pilot.
             </p>
+            <p>Learnings:
+            </p>
+            <p>
+              - Coupons are a must-have. (They have over 5000 coupons)
+              <br/>
+              - Unlocked serialized products are a must-have. 
+            </p>
+            <p>
+              This feedback was also used to write MVP requirements
+            </p>
+            </div>
+            <img
+            src="./img/POS/requirements.png"
+            alt="requirements"
+            loading="lazy"
+          />
           </div>
           <div class="process-block">
-            <h2>Static & Dynamic information for the Application Process</h2>
+            <h2>User testing</h2>
+            <p>
+              For user testing, I conducted internal, external and went in-store to ensure the design is seamless for the in-store environment.
+            </p>
+            <p>Key findings were:
+            </p>
+            <p>
+              - The user’s eyes always went to the bottom of the cart first to see if discounts has been applied. 
+              <br/>
+              - Applying discounts was one too many clicks. At a scale of 200 sales per day, every click saved is time saved.
+              <br/>
+              - Showing address when searching for a customer is a security risk.
+              <br/>
+              - Printing receipts is very expensive for the business.
+            </p>
             <img
-              src="./img/konokona/staticdynamic.png"
-              alt="static and dynamic information"
+              src="./img/POS/Beforeafter.png"
+              alt="before and after usability testing"
               loading="lazy"
             />
-            <p>
-              To decrease the time for artists to repeated enter the same information during the application process, I split them into
-              two categories, the static and the dynamic information
-            </p>
-            <p>
-              <b>Static</b> Information being the information that never
-              changes. Things like name, address, portfolio, website. All
-              organizers need this information, and the user should not have to
-              repeatedly input this information
-            </p>
-            <p>
-              <b>Dynamic</b> Information being the information that changes. Who
-              your table partner is and what your table name will be is always
-              something that constantly gets changed
-            </p>
-            <p>This right here was the "AHA moment" I got from artists during usability testing</p>
           </div>
           <div class="process-block">
-            <h2>Mobile</h2>
+            <h2>Discounting exploration</h2>
+            <p>Post usability testing, I explored multiple ways to save clicks when applying discounts.</p>
+            <p>I worked with my crossfunctional stakeholders to understand what value we can deliver for an MVP, but also considering where we can move towards.</p>
             <img
-              src="./img/konokona/mobilefriendly.png"
-              alt="mobile view"
+              src="./img/POS/Discountingexplorations.png"
+              alt="discounting explorations"
               loading="lazy"
             />
-            <p>
-              Application is also on mobile view as a lot of artists has other
-              jobs in the service industry, and cannot easily access a computer.
-              However, when I did my initial interviews, many artists would not
-              apply for an application through their phones due to the fear of
-              making mistakes.
-            </p>
           </div>
           <div class="process-block">
-            <h2>Accessibility</h2>
+            <h2>Security & PCI Compliance</h2>
+            <p>
+              Throughout my user testing and collaboration with the security team, I learned there was considerations and processes put in place to prevent identity theft and fraud.
+            </p>
+            <p>Seeing how this was extremely common in the industry, with severe consequences, I created an anti-persona with best practice guidelines to prevent identity theft and fraud.</p>
             <img
-              src="./img/konokona/accessibility.jpg"
-              alt="accessibility"
-              loading="lazy"
-            />
-            <p>
-              Half way through the project, I learned about designing for
-              accessibility, and realized that none of my colors passed
-              accessibility criterias. I changed the colors that didn't pass the
-              WCAG AA guidelines. The improved contrast ratio made the overall
-              design better.
-            </p>
+              src="./img/POS/antipersona.png"
+              alt="anti persona"
+              loading="lazy"/>
           </div>
           <div class="process-block">
+            <h2>Responsive design</h2>
+            <p>One of the requirements for this project is to allow our clients to use this on any device, I ensured all the design components were scalable for mobile devices.</p>
+            <img
+              src="./img/POS/responsive.png"
+              alt="responsive design"
+              loading="lazy"/>
+          </div>
             <h2>
               Outcome
             </h2>
-            <div style="position: relative; padding-bottom: 62.06896551724138%; height: 0;"><iframe src="https://www.loom.com/embed/4d685f1873254c1ea631d70dc07d538e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-            <p>My key accomplishments through this project is:</p>
-            <p>1. Getting the AHA moment out of artists attending anime conventions, as this would save them a lot of anxiety with table applications.
-              <br/>
-              2. Impressed the former CEO of Picatic, and was invited to their office.
-            </p>            
-          </div>
         </div>
       </section>
       <section id="projectmade">
         <article class="showcase">
-          <video
-            src="./img/konokona/artist1.mp4"
-            autoplay="autoplay"
-            loop
-            alt="front page"
-            muted
-            loading="lazy"
-          ></video>
+          <img
+          src="./img/pos/cart.png"
+          alt="cart"
+          loading="lazy"/>
           <div>
-          <h2>Search for the upcoming anime conventions near you</h2>
+          <h2>Scalable cart for your most critical tasks</h2>
         </div>
         </article>
         <article class="showcase reverse">
-          <video
-            src="./img/konokona/artist2.mp4"
-            autoplay="autoplay"
-            loop
-            alt="convention information"
-            muted
-            loading="lazy"
-          ></video>
+          <img
+          src="./img/pos/discounts.png"
+          alt="discount"
+          loading="lazy"/>
           <div>
           <h2>
-            Have all the key anime convention table information layed out for
-            artists, in a user friendly and accessible way
+            Discounting at your fingertips
           </h2>
         </div>
         </article>
         <article class="showcase">
-          <video
-            src="./img/konokona/artist3.mp4"
-            autoplay="autoplay"
-            loop
-            alt="applying for tables"
-            muted
-            loading="lazy"
-          ></video>
+          <img
+          src="./img/pos/receipt.png"
+          alt="receipt"
+          loading="lazy"/>
           <div>
-          <h2>Easy form to apply for tables within a few clicks</h2>
-        </div>
-        </article>
-        <article class="showcase reverse">
-          <video
-            src="./img/konokona/artist4.mp4"
-            autoplay="autoplay"
-            loop
-            alt="application process"
-            muted
-            loading="lazy"
-          ></video>
-          <div>
-          <h2>
-            Your personal information saved, so you don't have to input
-            repetitive information when applying to multiple artist alleys at
-            once
-          </h2>
+          <h2>Send receipts frictionlessly</h2>
         </div>
         </article>
       </section>
       <section id="keytakeaways" class="key-takeaways">
-        <h2>Key Takeaways</h2>
+        <h2>Impact of design</h2>
         <div class="takeaways">
           <div>
-            <h3>Thinking of Accessibility</h3>
-            <p>
-              After designing the first mock up iteration, I realized that the
-              color choice I used was not accessible to the colorblind. This
-              made me think more critically about my color choice, understanding
-              that accessibility is not an after thought but rather should be
-              considered at the start of my design process. Not only did it
-              improve my design for those who are colorblind, it improved my
-              design overall for everyone.
+            <h3>Including design from discovery</h3>
+            <p>As design never really had a seat at the table, I was able to be
+              included from the very beginning. I was able to establish this process
+              with product, and I got a testimonial from my product owner:
             </p>
-          </div>
-          <div>
-            <h3>Successful Usertesting VS Good Design</h3>
             <p>
-              After doing countless usertesting, I learned that just because it
-              was successful does not completely mean it was good. My users are
-              tech literate but used to a tedious process. When there were
-              certain features I was able to simplify, the “wow“ I saw on their
-              faces was when I knew the “Aha!“ moment came.
+              "...I don't think I've ever had a designer create mocks to share with clients BEFORE requirements were written. it makes a ton of sense to me to do that - to get feedback that can be used to develop the requirements...
+            </p>
+            <p>...This has been helpful so far in eliciting more meaningful requirements from users..."
             </p>
           </div>
         </div>
