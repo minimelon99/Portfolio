@@ -249,6 +249,19 @@ h2 {
 .order-left {
   order: 2;
 }
+
+.teaser {
+  width: 55%;
+  margin: 40px auto 90px;
+}
+
+.teaser p {
+  line-height: 1.7;
+}
+
+.teaser a {
+  color: #3c5c67;
+}
 /*mobile view for the body*/
 @media (max-width: 575.98px) {
   .fp-body {
@@ -312,7 +325,15 @@ h2 {
 }
 
 .about-hero div {
-  width: 40%;
+  width: 48%;
+}
+
+.about-hero p {
+  line-height: 1.7;
+}
+
+.about-hero a {
+  color: #3c5c67;
 }
 
 @media (max-width: 575.98px) {
@@ -490,6 +511,9 @@ h2 {
   .project-header img {
     width: 100%;
     margin: auto;
+  }
+  .teaser {
+    width: 90%;
   }
 
   .side-tracker {
