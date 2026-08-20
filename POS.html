@@ -1,403 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <!-- Place your kit's code here -->
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-129813954-2"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "UA-129813954-2");
-      </script>
-
-      <link rel="stylesheet" type="text/css" href="css/animate.css" />
-
-      <script
-        src="https://kit.fontawesome.com/ba013bbe16.js"
-        crossorigin="anonymous"
-      ></script>
-      <link
-        href="https://fonts.googleapis.com/css?family=Nunito+Sans|Overpass&display=swap"
-        rel="stylesheet"
-      />
-      <title>Point of sale</title>
-      <link rel="icon" type="image/png" href="img/fullhead_happy.png" />
-
-      <link rel="stylesheet" type="text/css" href="css/main.css" />
-      <script language="javascript">
-        var password; 
-        var pass1="chicken"; 
-        password=prompt('Enter Password',''); 
-        if (password==pass1) 
-        alert('Correct Password! Click OK to Enter!'); 
-        else { window.location="http://yinazhu.com/"; 
-        } 
-        </script>
-    </head>
-    <body>
-      <header class="project5-bg">
-        <nav class="header-nav ">
-          <div>
-            <a href="index.html"><h2>Amy Zhu</h2></a>
-          </div>
-          <div class="menu desktop-menu">
-            <ul>
-              <li><a href="index.html">Portfolio</a></li>
-              <li><a href="personalwork.html">Personal Work</a></li>
-              <li><a href="aboutme.html">About me</a></li>
-              <!-- <li><a href="contact.html">Contact</a></li> -->
-            </ul>
-          </div>
-          <i class="fa fa-bars fa-2x"></i>
-          <div class="menu mobile-menu">
-            <i class="fas fa-times fa-2x"></i>
-            <ul class="mobile-styles">
-              <li><a href="index.html">Portfolio</a></li>
-              <li><a href="personalwork.html">Personal Work</a></li>
-              <li><a href="aboutme.html">About me</a></li>
-              <!-- <li><a href="contact.html">Contact</a></li> -->
-            </ul>
-          </div>
-        </nav>
-        <section class="project-header animated fadeInUp">
-          <h1>Point-of-sale for telecom retail</h1>
-          <p>
-            Reimagining the telecom retail experience, starting from a point-of-sale.
-          </p>
-          <img
-            src="./img/pos/posbanner.png"
-            alt="artist banner"
-            loading="lazy"
-          />
-        </section>
-      </header>
-      <section id="problemstatement" class="project-container">
-        <div class="problem-statement">
-          <img
-            src="./img/POS/existingplatform.png"
-            alt="existing platform"
-            loading="lazy"
-          />
-          <div class="statement">
-            <h2>Business problem</h2>
-            <p>
-              We have a 20-year-old feature-bloated product, severely slowing our feature velocity; blocking the company’s ability to innovate.
-            </p>
-            <p>Our clients also wanted pieces of our solutions to solve their own business needs. However, this cannot be achieved, as we can only give them all or nothing. 
-            </p>
-            <h2>Company strategy</h2>
-            <p>
-              The goal is to modularize pieces of our giant product and turn it into solutions that integrates seamlessly with each other. I was responsible for the point-of-sale
-            </p>
-            <h2>Outcome</h2>
-            <p>
-              Our short term goal is to release the modularized point-of-sale by early 2023, so our strategic partner can pilot in-stores.
-            </p>
-            <p>Our long term goal is to reduce the transaction time by 30%</p>
-          </div>
-        </div>
-    
-      </section>
-     
-
-      <section id="process" class="process">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-129813954-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-129813954-2");
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <script
+      src="https://kit.fontawesome.com/ba013bbe16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans|Overpass&display=swap"
+      rel="stylesheet"
+    />
+    <title>Point of sale</title>
+    <link rel="icon" type="image/png" href="img/fullhead_happy.png" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <header class="project5-bg">
+      <nav class="header-nav">
         <div>
-          <div class="process-block">
-            <h2>Design challenges</h2>
-            <p>The company is transitioning from a sales-led to a product-led process. There is no process established on how we work together.</p>
-            <p>Design is considered an afterthought. Our cross-functional stakeholders often do not know how to collaborate with us from the discovery phase.</p>
-            <p>A lot of ambiguity. The only direction given is “modularize the POS” and “needs to work on all devices” by Q1 of 2023</p>
-          </div>
-          <div class="process-block wireframes">
-            <h2>Research</h2>
-            <p>
-              I went on on-site visits, conducted customer interviews with former sales reps, and consulted the CX team to understand what:
-            </p>
-            <p>   
-              1. The current in-store experience is like today
-              <br/>
-              2. Painpoints associated with the process today</p>
-            <img
-              src="./img/POS/onsite1.png"
-              alt="onsite telus"
-              loading="lazy"
-            />
-            <img
-              src="./img/POS/onsite2.png"
-              alt="onsite koodo"
-              loading="lazy"
-            />
-          </div>
-          <div class="process-block">
-            <h2>Key findings</h2>
-            <p>I mapped out a user journey from the outcomes of my research.</p>
-            <img
-              src="./img/POS/userjourneyins.png"
-              alt="in-store user journey"
-              loading="lazy"
-            />
-            <p>The average time of transaction is around 45 minutes. Some of the reasons why it takes so long:             
-            </p>
-            <p> 1. There is a minimum of 2 platforms required to process a transaction. Depending on the complexity, it can be more than 4. (Activation, transactions, warranty, trade-ins.)
-              <br/>
-              2. Switch & login between multiple systems; forcing the user to remember multiple passwords. The experience is worse for multi-carrier clients.
-              <br/>
-              3. Contract signing requires printing and re-uploading into multiple systems
-              <br/>
-              4. Duplicating data entry into multiple systems for the sales rep. Wrong entry of data means reconciliation later on.
-              <br/>
-              5. End consumers has to repeat themselves twice to provide the same information
-            </p>
-          </div>
-          <div class="process-block">
-            <h2>Persona</h2>
-            <p>
-              I also created 2 personas to understand the motivations of the users who are impacted by this experience
-            </p>
-            <img
-              src="./img/POS/salesreppersona.png"
-              alt="sales rep persona"
-              loading="lazy"
-            />
-            <img
-              src="./img/POS/personaendconsumer.png"
-              alt="end consumer persona"
-              loading="lazy"
-            />
-            
-          </div>
-          <div class="process-block wireframes">
-            <h2>Validating our direction</h2>
-            <p>
-              I created an end-to-end in-store experience vision and shared it with clients to align on the direction we are headed. We were able to validate the direction of frictionless experience on 1 platform.
-            </p>
-            <p>We also learned that our clients prioritized speed above everything. Every impact made has to reduce the transaction time. </p>
-            <img
-              src="./img/POS/mockdash.png"
-              alt="dashboard mockup"
-              loading="lazy"
-            />
-            <img
-            src="./img/POS/storydash.png"
-            alt="story"
-            loading="lazy"
-          />
-            
-          </div>
-          <div class="process-block wireframes">
-            <h2>Competitive analysis</h2>
-            <p>
-            I looked at industry leading point-of-sales on the market like Shopify and Square. I also collaborated with the team to understand telecom specific use cases that the design needs to be aware of.
-            </p>
-            <img
-              src="./img/POS/cp1.png"
-              alt="competitve analysis"
-              loading="lazy"
-            />
-            <img
-            src="./img/POS/cp2.png"
-            alt="competitve analysis"
-            loading="lazy"
-          />
-          <img
-          src="./img/POS/cp3.png"
-          alt="competitve analysis"
+          <a href="index.html"><h2>Amy Zhu</h2></a>
+        </div>
+        <div class="menu desktop-menu">
+          <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="personalwork.html">Personal Work</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars fa-2x"></i>
+        <div class="menu mobile-menu">
+          <i class="fas fa-times fa-2x"></i>
+          <ul class="mobile-styles">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="personalwork.html">Personal Work</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="project-header animated fadeInUp">
+        <h1>Point-of-sale for telecom retail</h1>
+        <p>
+          Reimagining the in-store retail experience, starting from the
+          point-of-sale.
+        </p>
+        <img
+          src="./img/POS/posbanner.png"
+          alt="Point-of-sale product banner"
           loading="lazy"
         />
-        <img
-        src="./img/POS/cp4.png"
-        alt="competitve analysis"
-        loading="lazy"
-      />
-          </div>
-          <div class="process-block">
-            <h2>Userflow</h2>
-            <p>
-              As our current product is huge in terms of features, our team decided to start exploring the point-of-sale from a non-serialized item (anything without IMEI) transaction.
-            </p>
-            <img src="./img/POS/userflow.png" alt="wireframes" loading="lazy" />
-          </div>
-          <div class="process-block">
-            <h2>Design vision</h2>
-            <p>
-              I applied the feedback we got from our clients and explored multiple concepts, as well as the high-level vision.
-            </p>
-            <img
-              src="./img/POS/screenshots.png"
-              alt="vision dashboard"
-              loading="lazy"
-            />
-            <p>I showed the long-term vision to product & engineering and collaborated with them on narrowing down a MVP. Our assumption was: 
-            </p>
-            <p> 
-              - Ability to process a non-serialized transaction (non-IMEI)
-              <br/>
-              - Ability to discount manually
-              <br/>
-              - Email & print receipt only
-              <br/>
-              - No cash transactions</p>
-          </div>
-          <div class="process-statement">
-         
-          <div> 
-            <h2>Creating the MVP with clients</h2>
-            <p>
-              We validated the design vision and MVP with our clients to see if it provides enough value for a pilot.
-            </p>
-            <p>Learnings:
-            </p>
-            <p>
-              - Coupons are a must-have. (They have over 5000 coupons)
-              <br/>
-              - Unlocked serialized products are a must-have. 
-            </p>
-            <p>
-              This feedback was also used to write MVP requirements
-            </p>
-            </div>
-            <img
-            src="./img/POS/requirements.png"
-            alt="requirements"
-            loading="lazy"
-          />
-          </div>
-          <div class="process-block">
-            <h2>User testing</h2>
-            <p>
-              For user testing, I conducted internal, external and went in-store to ensure the design is seamless for the in-store environment.
-            </p>
-            <p>Key findings were:
-            </p>
-            <p>
-              - The user’s eyes always went to the bottom of the cart first to see if discounts has been applied. 
-              <br/>
-              - Applying discounts was one too many clicks. At a scale of 200 sales per day, every click saved is time saved.
-              <br/>
-              - Showing address when searching for a customer is a security risk.
-              <br/>
-              - Printing receipts is very expensive for the business.
-            </p>
-            <img
-              src="./img/POS/Beforeafter.png"
-              alt="before and after usability testing"
-              loading="lazy"
-            />
-          </div>
-          <div class="process-block">
-            <h2>Discounting exploration</h2>
-            <p>Post usability testing, I explored multiple ways to save clicks when applying discounts.</p>
-            <p>I worked with my crossfunctional stakeholders to understand what value we can deliver for an MVP, but also considering where we can move towards.</p>
-            <img
-              src="./img/POS/Discountingexplorations.png"
-              alt="discounting explorations"
-              loading="lazy"
-            />
-          </div>
-          <div class="process-block">
-            <h2>Security & PCI Compliance</h2>
-            <p>
-              Throughout my user testing and collaboration with the security team, I learned there was considerations and processes put in place to prevent identity theft and fraud.
-            </p>
-            <p>Seeing how this was extremely common in the industry, with severe consequences, I created an anti-persona with best practice guidelines to prevent identity theft and fraud.</p>
-            <img
-              src="./img/POS/antipersona.png"
-              alt="anti persona"
-              loading="lazy"/>
-          </div>
-          <div class="process-block">
-            <h2>Responsive design</h2>
-            <p>One of the requirements for this project is to allow our clients to use this on any device, I ensured all the design components were scalable for mobile devices.</p>
-            <img
-              src="./img/POS/responsive.png"
-              alt="responsive design"
-              loading="lazy"/>
-          </div>
-            <h2>
-              Outcome
-            </h2>
-        </div>
       </section>
-      <section id="projectmade">
-        <article class="showcase">
-          <img
-          src="./img/pos/cart.png"
-          alt="cart"
-          loading="lazy"/>
-          <div>
-          <h2>Scalable cart for your most critical tasks</h2>
-        </div>
-        </article>
-        <article class="showcase reverse">
-          <img
-          src="./img/pos/discounts.png"
-          alt="discount"
-          loading="lazy"/>
-          <div>
-          <h2>
-            Discounting at your fingertips
-          </h2>
-        </div>
-        </article>
-        <article class="showcase">
-          <img
-          src="./img/pos/receipt.png"
-          alt="receipt"
-          loading="lazy"/>
-          <div>
-          <h2>Send receipts frictionlessly</h2>
-        </div>
-        </article>
-      </section>
-      <section id="keytakeaways" class="key-takeaways">
-        <h2>Impact of design</h2>
-        <div class="takeaways">
-          <div>
-            <h3>Including design from discovery</h3>
-            <p>As design never really had a seat at the table, I was able to be
-              included from the very beginning. I was able to establish this process
-              with product, and I got a testimonial from my product owner:
-            </p>
-            <p>
-              "...I don't think I've ever had a designer create mocks to share with clients BEFORE requirements were written. it makes a ton of sense to me to do that - to get feedback that can be used to develop the requirements...
-            </p>
-            <p>...This has been helpful so far in eliciting more meaningful requirements from users..."
-            </p>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <a href="mailto:yinazhu99@gmail.com" aria-label="Email"
-          ><i class="far fa-envelope fa-lg"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/amy-zhu-3233ab115/"
-          aria-label="LinkedIn"
-        >
-          <i class="fab fa-linkedin fa-lg"></i
-        ></a>
-        <a href="https://medium.com/@yinazhu99" aria-label="Medium">
-          <i class="fab fa-medium fa-lg"></i>
-        </a>
-        <a href="https://github.com/minimelon99" aria-label="Github"
-          ><i class="fab fa-github fa-lg"></i
-        ></a>
-        <p>Designed & Coded by Amy Zhu | 2022</p>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src="./js/menu.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    </body>
-  </html>
+    </header>
+    <section class="project-container">
+      <div class="project-define">
+        <h2>my role</h2>
+        <p>Lead product design, research, prototyping, and user testing</p>
+      </div>
+      <div class="project-define">
+        <h2>what it is</h2>
+        <p>
+          A modular point-of-sale for telecom retail, designed to work across
+          devices and reduce the time it takes to complete an in-store
+          transaction.
+        </p>
+      </div>
+    </section>
+    <section class="teaser">
+      <p>
+        I led the end-to-end design process from discovery, prototyping, and
+        user testing. The work included on-site research with sales reps,
+        mapping the in-store journey, and designing a scalable POS that cut
+        transaction time by 30%.
+      </p>
+      <p>
+        The full case study is available on request.
+        <a href="mailto:yinazhu99@gmail.com">Reach out to learn more.</a>
+      </p>
+    </section>
+    <footer class="footer">
+      <a href="mailto:yinazhu99@gmail.com" aria-label="Email"
+        ><i class="far fa-envelope fa-lg"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/amy-zhu-3233ab115/"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin fa-lg"></i
+      ></a>
+      <a href="https://medium.com/@yinazhu99" aria-label="Medium">
+        <i class="fab fa-medium fa-lg"></i>
+      </a>
+      <a href="https://github.com/minimelon99" aria-label="Github"
+        ><i class="fab fa-github fa-lg"></i
+      ></a>
+      <p>Designed & Coded by Amy Zhu | 2022</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+  </body>
 </html>
